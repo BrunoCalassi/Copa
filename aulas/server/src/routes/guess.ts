@@ -11,7 +11,7 @@ export async function guessRoutes(fastify: FastifyInstance) {
   });
 
   fastify.post(
-    "post/:poolId/games/:gameId/guesses",
+    "/post/:poolId/games/:gameId/guesses",
     {
       onRequest: [authenticate],
     },
